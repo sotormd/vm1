@@ -5,6 +5,6 @@
       enable = true;
       generateScript = true;
     };
-    windowManager.windowmanager.enable = true;
+    windowManager.windowmaker.enable = true;
   };
 }
