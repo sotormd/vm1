@@ -1,6 +1,14 @@
 { pkgs, ... }:
 
 {
-  programs.labwc.enable = true;
-  environment.systemPackages = [ pkgs.alacritty ];
+  services.xserver = {
+    enable = true;
+    displayManager.startx = {
+      enable = true;
+      generateScript = true;
+    };
+    windowManager.openbox.enable = true;
+  };
+
+  environment.systemPackages = [ pkgs.urxvt ];
 }
