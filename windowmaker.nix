@@ -1,3 +1,5 @@
+{ pkgs, ... }:
+
 {
   services.xserver = {
     enable = true;
@@ -7,4 +9,13 @@
     };
     windowManager.windowmaker.enable = true;
   };
+
+  environment.systemPackages = with pkgs.dockapps; [
+    wmsystemtray
+    wmsm-app
+    wmcube
+    wmCalClock
+    cputnik
+    AlsaMixer-app
+  ];
 }
