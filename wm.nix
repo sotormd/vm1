@@ -5,6 +5,6 @@
       enable = true;
       generateScript = true;
     };
-    windowManager.cwm.enable = true;
+    windowManager.openbox.enable = true;
   };
 }

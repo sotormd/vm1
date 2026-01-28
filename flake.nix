@@ -8,7 +8,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix
-        ./cwm.nix
+        ./wm.nix
       ];
     };
   };
