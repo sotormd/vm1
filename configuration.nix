@@ -58,7 +58,10 @@
       "wheel"
     ];
     packages = with pkgs; [ ];
+    hashedPassword = "";
   };
+
+  users.mutableUsers = false;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
