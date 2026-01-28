@@ -1,17 +1,15 @@
 {
-description = "vm1";
+  description = "vm1";
 
-inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-outputs = inputs: {
-
-nixosConfigurations.vm1 = inputs.nixpkgs.lib.nixosSystem {
-
-specialArgs = { inherit inputs; };
-modules = [ ./configuration.nix ];
-
-};
-
-};
-
+  outputs = inputs: {
+    nixosConfigurations.vm1 = inputs.nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./configuration.nix
+        ./windowmaker.nix
+      ];
+    };
+  };
 }

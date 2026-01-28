@@ -5,10 +5,10 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-    ];
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+  ];
 
   # Bootloader.
   boot.loader.grub.enable = true;
@@ -53,25 +53,31 @@
   users.users.sotormd = {
     isNormalUser = true;
     description = "sotormd";
-    extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+    ];
+    packages = with pkgs; [ ];
   };
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
-  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-  #  wget
-git
-vim
+    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    #  wget
+    git
+    vim
   ];
-programs.git.enable = true;
-programs.git.config = {
-user.name = "sotormd";
-user.email = "sotormd@vm1"; 
-};
+  programs.git.enable = true;
+  programs.git.config = {
+    user.name = "sotormd";
+    user.email = "sotormd@vm1";
+  };
 
-nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
