@@ -1,4 +1,10 @@
 {
-  services.xserver.enable = true;
-  services.xserver.windowManager.windowmaker.enable = true;
+  services.xserver = {
+    enable = true;
+    displayManager.startx = {
+      enable = true;
+      generateScript = true;
+    };
+    windowManager.windowmanager.enable = true;
+  };
 }
