@@ -5,7 +5,7 @@
     enable = true;
     displayManager.startx = {
       enable = true;
-      generateScript = true;
+      generateScript = false;
     };
     windowManager.windowmaker.enable = true;
   };
@@ -13,6 +13,11 @@
   environment.systemPackages = with pkgs.dockapps; [
     cputnik
   ];
+
+  environment.etc."X11/xinit/xinitrc".text = ''
+    xrdb -load /etc/X11/app-defaults/XTerm
+    exec wmaker
+  '';
 
   environment.etc."X11/app-defaults/XTerm".text = ''
     XTerm*termName: xterm-256color
