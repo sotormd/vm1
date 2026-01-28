@@ -50,9 +50,8 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.sotormd = {
+  users.users.nixos = {
     isNormalUser = true;
-    description = "sotormd";
     extraGroups = [
       "networkmanager"
       "wheel"
@@ -78,8 +77,8 @@
   ];
   programs.git.enable = true;
   programs.git.config = {
-    user.name = "sotormd";
-    user.email = "sotormd@vm1";
+    user.name = "nixos";
+    user.email = "nixos@vm1";
   };
 
   nix.settings.experimental-features = [
