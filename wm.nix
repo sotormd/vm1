@@ -9,6 +9,4 @@
     };
     windowManager.openbox.enable = true;
   };
-
-  environment.systemPackages = [ pkgs.urxvt ];
 }
