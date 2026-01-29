@@ -1,9 +1,6 @@
-backend = "glx";
-
 shadow = true;
 shadow-radius = 1;
 shadow-offset-x = 10;
 shadow-offset-y = 10;
 shadow-opacity = 1;
 
-vsync = true;
