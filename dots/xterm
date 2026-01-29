@@ -19,7 +19,7 @@
 *color14: #39caff
 *color15: #ffffee
 
-*font: xft:Azeret Mono:size=14:Bold
+*font: xft:JetBrains Mono:size=14:Bold
 
 *lineSpace:             5
 *letterSpace:           1

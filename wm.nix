@@ -27,7 +27,7 @@ in
 
   environment.systemPackages = with pkgs; [
     openbox-wrapper
-    azeret-mono
+    jetbrains-mono
     obconf
   ];
 
