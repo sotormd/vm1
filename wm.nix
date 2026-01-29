@@ -32,5 +32,9 @@ in
   programs.bash.enable = true;
   programs.bash.promptInit = builtins.readFile ./dots/prompt;
 
-  programs.bash.loginShellInit = "exec startx";
+  programs.bash.loginShellInit = ''
+    if [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
+      exec startx
+    fi
+  '';
 }
