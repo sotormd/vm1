@@ -15,6 +15,19 @@ let
       cp -r ${./dots/theme}/* $out/share/themes/vm1/
     '';
   };
+
+  tint2-bin = pkgs.writeShellScriptBin "tint2" ''
+    ${pkgs.tint2}/bin/tint2 --config ${./dots/tint2}
+  '';
+
+  tint2-wrapper = pkgs.symlinkJoin {
+    name = "tint2";
+    paths = [ pkgs.tint2 ];
+    postBuild = ''
+      rm $out/bin/tint2
+      cp ${tint2-bin}/bin/tint2 $out/bin/tint2
+    '';
+  };
 in
 {
   services.xserver = {
@@ -27,6 +40,7 @@ in
 
   environment.systemPackages = with pkgs; [
     openbox-wrapper
+    tint2-wrapper
     w3m
   ];
 
