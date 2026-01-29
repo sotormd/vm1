@@ -1,3 +1,5 @@
+backend = "xrender";
+
 shadow = true;
 shadow-radius = 1;
 shadow-offset-x = 10;
