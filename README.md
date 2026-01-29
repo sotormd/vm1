@@ -23,7 +23,7 @@ largely inspired by [retro](http://github.com/chocolateBread799/retro)
        nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
        # add this flake as an input
-       minimal-openbox = "github:sotormd/minimal-openbox"
+       minimal-openbox = "github:sotormd/minimal-openbox";
        minimal-openbox.inputs.nixpkgs.follows = "nixpkgs";
      };
 
