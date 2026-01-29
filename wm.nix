@@ -18,7 +18,7 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
-    xinitrc
+    xinit
     openbox-wrapper
     w3m
   ];
