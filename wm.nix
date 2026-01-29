@@ -17,10 +17,15 @@ let
   };
 in
 {
-  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
+    displayManager.startx = {
+      enable = true;
+      generateScript = false;
+    };
+  };
 
   environment.systemPackages = with pkgs; [
-    xinit
     openbox-wrapper
     w3m
   ];
