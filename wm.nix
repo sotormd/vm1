@@ -17,15 +17,8 @@ let
   };
 in
 {
-  services.xserver = {
-    enable = true;
-    displayManager.startx = {
-      enable = true;
-      generateScript = false;
-    };
-  };
-
   environment.systemPackages = with pkgs; [
+    xinitrc
     openbox-wrapper
     w3m
   ];
@@ -38,4 +31,6 @@ in
 
   programs.bash.enable = true;
   programs.bash.promptInit = builtins.readFile ./dots/prompt;
+
+  programs.bash.loginShellInit = "exec startx";
 }
