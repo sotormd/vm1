@@ -147,14 +147,14 @@
       </action>
     </keybind>
 
-    <!-- Launch terminal -->
     <keybind key="W-Return">
       <action name="Execute">
         <command>xterm</command>
       </action>
     </keybind>
+
     <keybind key="W-Escape">
-      <action name="Exit">
+        <action name="Exit"/>
     </keybind>
   </keyboard>
 
