@@ -20,7 +20,6 @@ in
   services.xserver = {
     enable = true;
     displayManager = {
-      enable = true;
       startx = {
         enable = true;
         generateScript = false;
