@@ -11,9 +11,8 @@
   ];
 
   # Bootloader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.device = "/dev/vda";
-  boot.loader.grub.useOSProber = true;
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -49,7 +48,6 @@
     variant = "";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.nixos = {
     isNormalUser = true;
     extraGroups = [
@@ -75,16 +73,12 @@
     git
     vim
   ];
+
   programs.git.enable = true;
   programs.git.config = {
     user.name = "nixos";
     user.email = "nixos@vm1";
   };
-
-  nix.settings.experimental-features = [
-    "nix-command"
-    "flakes"
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
