@@ -27,9 +27,12 @@ in
 
   environment.systemPackages = with pkgs; [
     openbox-wrapper
-    jetbrains-mono
     obconf
   ];
+
+  fonts.enableCoreFonts = true;
+  fonts.enableDefaultFonts = true;
+  fonts.packages = [ pkgs.jetbrains-mono ];
 
   environment.etc."X11/xinit/xinitrc".source = ./dots/xinitrc;
 
