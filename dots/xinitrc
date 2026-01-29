@@ -1,5 +1,4 @@
 xrdb -load /etc/X11/app-defaults/XTerm
 xrandr --output Virtual-1 --mode 1920x1200 --rate 60
 xsetroot -solid "#ffffee"
-tint2 &
 exec openbox
