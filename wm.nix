@@ -17,17 +17,12 @@ let
   };
 in
 {
-  services.xserver = {
-    enable = true;
-    displayManager.startx = {
-      enable = true;
-      generateScript = false;
-    };
-  };
+  services.xserver.enable = true;
 
   environment.systemPackages = with pkgs; [
+    xinit
     openbox-wrapper
-    obconf
+    w3a
   ];
 
   fonts.packages = [ pkgs.jetbrains-mono ];
