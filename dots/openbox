@@ -24,48 +24,48 @@
 
   <theme>
     <name>vm1</name>
-    <titleLayout>LC</titleLayout>
+    <titleLayout>L</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
 
     <font place="ActiveWindow">
         <name>JetBrains Mono Medium</name>
-      <size>8</size>
+      <size>10</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
 
     <font place="InactiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>10</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
 
     <font place="MenuHeader">
       <name>sans</name>
-      <size>9</size>
+      <size>10</size>
       <weight>normal</weight>
       <slant>normal</slant>
     </font>
 
     <font place="MenuItem">
       <name>JetBrains Mono Medium</name>
-      <size>9</size>
+      <size>10</size>
       <weight>normal</weight>
       <slant>normal</slant>
     </font>
 
     <font place="ActiveOnScreenDisplay">
       <name>JetBrains Mono Medium</name>
-      <size>9</size>
+      <size>10</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
 
     <font place="InactiveOnScreenDisplay">
       <name>JetBrains Mono Medium</name>
-      <size>9</size>
+      <size>10</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
