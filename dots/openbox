@@ -123,7 +123,7 @@
     <!-- ================= -->
 
     <!-- $mod+q : close window -->
-    <keybind key="W-q">
+    <keybind key="W-S-q">
       <action name="Close"/>
     </keybind>
 
@@ -131,12 +131,6 @@
     <keybind key="W-f">
       <action name="ToggleFullscreen"/>
     </keybind>
-
-    <!-- Focus movement (hjkl) -->
-    <keybind key="W-h"><action name="DirectionalFocus"><direction>left</direction></action></keybind>
-    <keybind key="W-l"><action name="DirectionalFocus"><direction>right</direction></action></keybind>
-    <keybind key="W-k"><action name="DirectionalFocus"><direction>up</direction></action></keybind>
-    <keybind key="W-j"><action name="DirectionalFocus"><direction>down</direction></action></keybind>
 
     <!-- Move windows (Shift+hjkl) -->
     <keybind key="W-S-h"><action name="MoveRelative"><x>-20</x><y>0</y></action></keybind>
