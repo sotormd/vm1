@@ -22,7 +22,7 @@ in
   environment.systemPackages = with pkgs; [
     xinit
     openbox-wrapper
-    w3a
+    w3m
   ];
 
   fonts.packages = [ pkgs.jetbrains-mono ];
