@@ -322,7 +322,12 @@
         </startupnotify>
         <command>kfmclient openProfile filemanagement</command>
       </action>
-    </keybind>
+  </keybind>
+  <keybind key="A-Return">
+    <action name="Execute">
+      <command>xterm</command>
+    </action>
+  </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>1</dragThreshold>
