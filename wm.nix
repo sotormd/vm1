@@ -15,19 +15,6 @@ let
       cp -r ${./dots/theme}/* $out/share/themes/vm1/
     '';
   };
-
-  picom-bin = pkgs.writeShellScriptBin "picom" ''
-    ${pkgs.picom}/bin/picom --config ${./dots/picom}
-  '';
-
-  picom-wrapper = pkgs.symlinkJoin {
-    name = "picom";
-    paths = [ pkgs.picom ];
-    postBuild = ''
-      rm $out/bin/picom
-      cp ${picom-bin}/bin/picom $out/bin/picom
-    '';
-  };
 in
 {
   services.xserver = {
@@ -40,8 +27,6 @@ in
 
   environment.systemPackages = with pkgs; [
     openbox-wrapper
-    picom-wrapper
-
     azeret-mono
     obconf
   ];

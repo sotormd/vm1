@@ -1,5 +1,5 @@
 *.foreground:   #000000
-*.background:   #ffffff
+*.background:   #ffffee
 *.cursorColor:  #000000
 
 *color0: #353535
@@ -17,7 +17,7 @@
 *color12: #3987ff
 *color13: #db39ff
 *color14: #39caff
-*color15: #ffffff
+*color15: #ffffee
 
 *font: xft:Azeret Mono:size=14:Bold
 
