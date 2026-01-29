@@ -17,7 +17,7 @@
     exec openbox
   '';
 
-  environment.etc."X11/app-defaults/XTerm" = ''
+  environment.etc."X11/app-defaults/XTerm".text = ''
     *.foreground:   #000000
     *.background:   #ffffff
     *.cursorColor:  #000000
