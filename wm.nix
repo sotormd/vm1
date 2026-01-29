@@ -28,7 +28,7 @@ in
     windowManager.session = [
       {
         name = "openbox";
-        start = "${pkgs.openbox-wrapper}/bin/openbox-session";
+        start = "${openbox-wrapper}/bin/openbox-session";
       }
     ];
   };
