@@ -14,6 +14,7 @@
 
   environment.etc."X11/xinit/xinitrc".text = ''
     xrdb -load /etc/X11/app-defaults/XTerm
+    xrandr --output Virtual-1 --mode 1920x1080 --rate 60
     exec openbox
   '';
 
