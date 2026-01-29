@@ -36,14 +36,14 @@
     </font>
 
     <font place="InactiveWindow">
-      <name>sans</name>
+      <name>JetBrains Mono Medium</name>
       <size>10</size>
       <weight>bold</weight>
       <slant>normal</slant>
     </font>
 
     <font place="MenuHeader">
-      <name>sans</name>
+      <name>JetBrains Mono Medium</name>
       <size>10</size>
       <weight>normal</weight>
       <slant>normal</slant>

@@ -22,15 +22,11 @@ window.inactive.title.bg: flat
 window.inactive.title.bg.color: #ffffee
 window.inactive.title.bg.border.color: #dddddd
 
-window.active.label.bg: flat interlaced
 window.active.label.bg.color: #ffffee
 window.active.label.text.color: #000000
-window.active.label.bg.interlace.color: #000000
 window.active.title.padding.width: 50
-window.inactive.label.bg: flat interlaced
 window.inactive.label.bg.color: #ffffee
 window.inactive.label.text.color: #000000
-window.inactive.label.bg.interlace.color: #000000
 window.inactive.title.padding.width: 50
 
 window.active.button.*.bg: parentrelative
