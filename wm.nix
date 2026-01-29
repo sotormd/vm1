@@ -17,8 +17,24 @@ let
   };
 in
 {
+  services.xserver = {
+    enable = true;
+    displayManager = {
+      enable = true;
+      startx = {
+        enable = true;
+        generateScript = false;
+      };
+    };
+    windowManager.session = [
+      {
+        name = "openbox";
+        start = "${pkgs.openbox-wrapper}/bin/openbox-session";
+      }
+    ];
+  };
+
   environment.systemPackages = with pkgs; [
-    xinit
     openbox-wrapper
     w3m
   ];
@@ -31,10 +47,4 @@ in
 
   programs.bash.enable = true;
   programs.bash.promptInit = builtins.readFile ./dots/prompt;
-
-  programs.bash.loginShellInit = ''
-    if [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ]; then
-      exec startx
-    fi
-  '';
 }
