@@ -60,4 +60,9 @@
     URxvt.cursorBlink: 1
     URxvt.cursorUnderline: 1
   '';
+
+  programs.bash.enable = true;
+  programs.bash.promptInit = ''
+    PS1="$ "
+  '';
 }
