@@ -36,6 +36,7 @@ in
   environment.systemPackages = with pkgs; [
     openbox-wrapper
     w3m
+    brightnessctl
   ];
 
   fonts.packages = [ pkgs.jetbrains-mono ];
