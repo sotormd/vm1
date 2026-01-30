@@ -15,5 +15,6 @@
       };
 
       nixosModules.minimal-openbox = _: { imports = [ ./wm.nix ]; };
+
     };
 }
