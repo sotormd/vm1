@@ -4,12 +4,12 @@ _very_ minimal openbox configuration
 
 ![screenshot](./screenshots/openbox.png)
 
-| category       | stack     |
-| -------------- | --------- |
-| display server | `xorg`    |
-| window manager | `openbox` |
-| terminal       | `xterm`   |
-| browser        | `w3m`     |
+| category       | stack            |
+| -------------- | ---------------- |
+| display server | `xorg`           |
+| window manager | `openbox`        |
+| terminal       | `xterm`          |
+| font           | `JetBrains Mono` |
 
 largely inspired by [retro](http://github.com/chocolateBread799/retro)
 

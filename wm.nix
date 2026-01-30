@@ -35,7 +35,6 @@ in
 
   environment.systemPackages = with pkgs; [
     openbox-wrapper
-    w3m
     brightnessctl
   ];
 
