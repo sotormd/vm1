@@ -11,8 +11,8 @@ let
     postBuild = ''
       rm $out/bin/openbox
       cp ${openbox-bin}/bin/openbox $out/bin/openbox
-      mkdir -p $out/share/themes/vm1
-      cp -r ${./dots/theme}/* $out/share/themes/vm1/
+      mkdir -p $out/share/themes/coffee
+      cp -r ${./dots/theme}/* $out/share/themes/coffee/
     '';
   };
 in

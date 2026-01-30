@@ -23,7 +23,7 @@
   </placement>
 
   <theme>
-    <name>vm1</name>
+    <name>coffee</name>
     <titleLayout>L</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
