@@ -41,7 +41,6 @@ largely inspired by [retro](http://github.com/chocolateBread799/retro)
        };
      };
    }
-   ``
    ```
 
 2. start openbox
